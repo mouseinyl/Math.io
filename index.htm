@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="shortcut icon" href="./recursos/icon.png" type="image/x-icon">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <header>
+        <nav>
+            <div class="nav-wrapper orange center">
+                <!-- <img src="./recursos/logo.png" alt=""> -->
+                <img src="./recursos/logo.png" alt="" class="logo_imag">
+                <a href="#" data-activates="la_pampara" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-small-and-down">
+                    <li><a href="#">about</a></li>
+                    <li><a>script</a></li>
+                </ul>
+                <ul class="side-nav " id="la_pampara">
+                    <h5 class="linea">Operaciones</h5>
+
+                    <li>
+                        <a>Progreciones Aritmeticas</a>
+                    </li>
+                    <li>
+                        <a>Progreciones Geometricas</a>
+                    </li>
+                    <li>
+                        <a>Interes Simple</a>
+                    </li>
+                    <li>
+                        <a>Interes Compuesto</a>
+                    </li>
+                    <li class="linea"></li>
+                    <li><a href="#!" class="active">About</a> </li>
+                    <li><a href="">script</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</head>
+
+<body>
+    <div class="box_menssage_dominio initial_position">
+        <div class="row">
+            <div class="col s12 box_menssage_style z-depth-3">
+                <button class="btn transparent right"><i class="material-icons">close</i></button>
+                <!--boto-->
+                <div class="col s12 center">
+                    <p class="col s12 white-text">a) Seleciona la operacion que desee.</p>
+                    <img src="./recursos/ejemplo_1.png" alt="objeto">
+                </div>
+                <div class="col s12 ">
+                    <button class="btn transparent"><i class="material-icons">keyboard_arrow_left</i></button>
+                    <button class="btn transparent right"><i class="material-icons">keyboard_arrow_right</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row margin_box">
+        <!-- opciones -->
+        <div class="col m12 l4 opciones_box hide-on-small-and-down">
+            <div class="col m6 l10 operation_box offset-l1 center">
+                <img src="./recursos/box.4.kuro.png" alt="">
+                <p>Progreciones Aritmeticas</p>
+            </div>
+            <div class="col m6 l10 operation_box offset-l1 center">
+                <img src="./recursos/box.4.kuro.png" alt="">
+                <p>Progreciones Geometricas</p>
+            </div>
+            <div class="col m6 l10 operation_box offset-l1 center">
+                <img src="./recursos/box.4.kuro.png" alt="">
+                <p>Interes Simple</p>
+            </div>
+            <div class="col m6 l10 operation_box offset-l1 center">
+                <img src="./recursos/box.4.kuro.png" alt="">
+                <p>Interes Compuesto</p>
+            </div>
+            <div class="col m6 l10 operation_box offset-l1 center">
+                <img src="./recursos/box.4.kuro.png" alt="">
+                <p>Ecuaciones Cuadratica</p>
+            </div>
+        </div>
+        <!-- sand box -->
+
+        <div class="col s12 m12 l7 sand_box center">
+            <!-- input -->
+            <div class="col s6 m5 l3 offset-s3 offset-m4 offset-l5 hide center" id="box_input">
+                <h5></h5>
+                <p class="col s5"></p>
+                <input class="col s5 center" type="text" name>
+                <p class="col s5 "></p>
+                <input class="col s5 center" type="text" name>
+                <p class="col s5"></p>
+                <input class="col s5 center" type="text" name>
+            </div>
+            <!-- resultados -->
+            <div class="col s8 m6 l10 offset-s2 offset-m3 offset-l1 box_resultados z-depth-2 "></div>
+            <!-- resultados -->
+        </div>
+        <!-- boton -->
+
+        <div class="boton_box">
+            <button id="boton" class="btn btn-floating btn-large"><i class="material-icons">help</i></button>
+        </div>
+
+
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="module" src="./js/scritp_main.js"></script>
+    <script type="text/javascript">
+        $(".button-collapse").sideNav();
+    </script>
+
+</body>
+
+</htm>

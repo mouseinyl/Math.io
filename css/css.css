@@ -1,0 +1,198 @@
+        @font-face {
+            font-family: 'ABeeZee';
+            font-style: normal;
+            font-weight: 500;
+            src: url('../fonts/abz/abeezee-v13-latin-regular.eot');
+            /* IE9 Compat Modes */
+            src: local('ABeeZee Regular'), local('ABeeZee-Regular'), url('../fonts/abz/abeezee-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/abz/abeezee-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/abz/abeezee-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/abz/abeezee-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/abz/abeezee-v13-latin-regular.svg#ABeeZee') format('svg');
+            /* Legacy iOS */
+        }
+        
+        * {
+            font-family: 'ABeeZee';
+            font-style: normal;
+            font-weight: 400;
+        }
+        
+        .margin_box {
+            margin: 10px;
+        }
+        
+        .opciones_box {
+            background: whitesmoke;
+            height: 630px;
+            margin: 10px !important;
+        }
+        
+        .sand_box {
+            background: whitesmoke;
+            height: 630px;
+            margin: 10px !important;
+        }
+        
+        .operation_box {
+            height: 100px;
+            margin-top: 20px;
+        }
+        
+        .operation_box img {
+            position: relative;
+            width: inherit;
+            height: inherit;
+            z-index: 1;
+        }
+        
+        .operation_box p {
+            position: relative;
+            z-index: 2;
+            bottom: 80px;
+            color: orange;
+        }
+        
+        #box_input {
+            padding: 0px !important;
+        }
+        
+        #box_input p {
+            background: #444444;
+            color: orange;
+            margin-top: 10px;
+            height: 46px;
+            padding-top: 5px;
+            font-size: inherit;
+        }
+        
+        #box_input input {
+            border: 1px solid #444444;
+            height: 43px;
+            margin-top: 11px;
+        }
+        
+        #box_input input:focus {
+            border: 1px solid orange;
+            box-shadow: none;
+            transition: 0.5s;
+            background: white;
+        }
+        
+        .boton_box {
+            position: absolute;
+            left: 80%;
+            bottom: 20%;
+        }
+        
+        #boton {
+            background-color: #444444;
+        }
+        
+        .resultados h4 {
+            color: orange;
+        }
+        
+        .box_menssage_dominio {
+            position: absolute;
+            z-index: 10;
+            top: 0px;
+            left: 40%;
+            height: 35%;
+            width: 30%;
+        }
+        
+        .box_menssage_style {
+            background: #444444;
+            color: white;
+            border-radius: 2px;
+        }
+        
+        .box_menssage_style button {
+            color: orange;
+            box-shadow: none;
+            margin-top: 10px;
+        }
+        
+        .box_menssage_style button:hover {
+            border: 1px orange solid;
+        }
+        
+        .box_menssage_style img {
+            position: relative;
+            width: 40%;
+            height: inherit;
+            border-radius: 5px;
+        }
+        
+        .initial_position {
+            top: -80%;
+            transition: 2s;
+        }
+        
+        .secondary_position {
+            transition: 2s;
+            top: 30%;
+        }
+        
+        .logo_imag {
+            position: relative;
+            width: inherit;
+            height: inherit;
+            /* left: 39%; */
+        }
+        /* mobile configuration */
+        
+        .side-nav {
+            background: #444444;
+        }
+        
+        .side-nav li a {
+            color: orange;
+        }
+        
+        .side-nav li a:hover {
+            background: orange;
+            color: white;
+        }
+        
+        .active {
+            background: orange;
+            color: white !important;
+        }
+        
+        .linea {
+            border-bottom: 0.5px solid orange;
+            margin: 5px;
+        }
+        
+        @media only screen and (min-width: 631px) and (max-width:990px) {
+            .opciones_box {
+                background: whitesmoke;
+                height: inherit;
+                margin: 0px !important;
+            }
+            .sand_box {
+                background: whitesmoke;
+                height: 550px;
+                margin: 0px !important;
+            }
+            .boton_box {
+                position: absolute;
+                left: 80%;
+                top: 60%;
+            }
+        }
+        
+        @media only screen and (min-width: 100px) and (max-width:630px) {
+            .sand_box {
+                background: whitesmoke;
+                height: 600px;
+                margin: 0px !important;
+            }
+            .box_menssage_dominio {
+                height: 35%;
+                width: 60%;
+                left: 20%;
+            }
+        }
